@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">KitchenTimer</string>
+    <string name="BtnSetTMp10">+10min</string>
+    <string name="BtnSetTMp5">+5min</string>
+    <string name="BtnSetTMp1">+1min</string>
+    <string name="BtnSetTMm10">-10min</string>
+    <string name="BtnSetTMm5">-5min</string>
+    <string name="BtnSetTMm1">-1min</string>
+    <string name="BtnStart">Start</string>
+    <string name="BtnReset">Reset</string>
+</resources>

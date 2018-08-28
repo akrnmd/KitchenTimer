@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/LblTimerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00"
+        android:textAllCaps="false"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:fontFamily="monospace"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/BtnSetTMp5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/BtnSetTMp5"
+        app:layout_constraintEnd_toStartOf="@+id/BtnSetTMp1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/BtnSetTMp10"
+        app:layout_constraintTop_toBottomOf="@+id/LblTimerView" />
+
+    <Button
+        android:id="@+id/BtnSetTMp10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/BtnSetTMp10"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/LblTimerView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LblTimerView" />
+
+    <Button
+        android:id="@+id/BtnSetTMp1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/BtnSetTMp1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/LblTimerView"
+        app:layout_constraintTop_toBottomOf="@+id/LblTimerView" />
+
+    <Button
+        android:id="@+id/BtnSetTMm10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/BtnSetTMm10"
+        app:layout_constraintEnd_toEndOf="@+id/BtnSetTMp10"
+        app:layout_constraintStart_toStartOf="@+id/BtnSetTMp10"
+        app:layout_constraintTop_toBottomOf="@+id/BtnSetTMp10" />
+
+    <Button
+        android:id="@+id/BtnSetTMm5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/BtnSetTMm5"
+        app:layout_constraintEnd_toEndOf="@+id/BtnSetTMp5"
+        app:layout_constraintStart_toStartOf="@+id/BtnSetTMp5"
+        app:layout_constraintTop_toBottomOf="@+id/BtnSetTMp5" />
+
+    <Button
+        android:id="@+id/BtnSetTMm1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/BtnSetTMm1"
+        app:layout_constraintEnd_toEndOf="@+id/BtnSetTMp1"
+        app:layout_constraintStart_toStartOf="@+id/BtnSetTMp1"
+        app:layout_constraintTop_toBottomOf="@+id/BtnSetTMp1" />
+
+    <Button
+        android:id="@+id/BtnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/BtnStart"
+        app:layout_constraintEnd_toStartOf="@+id/BtnSetTMm5"
+        app:layout_constraintTop_toBottomOf="@+id/BtnSetTMm5" />
+
+    <Button
+        android:id="@+id/BtnReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/BtnReset"
+        app:layout_constraintStart_toEndOf="@+id/BtnSetTMm5"
+        app:layout_constraintTop_toBottomOf="@+id/BtnSetTMm5" />
+
+</android.support.constraint.ConstraintLayout>
